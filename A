@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cmath>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	double X, P;
+	cin >> X >> P;
+	double ratio_after_discount = 100 - X;
+	double discound = P / ratio_after_discount;
+	double original_price = (discound * X)+P;
+	cout << fixed << setprecision(2) << original_price;
+	return 0;
+}
