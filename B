@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cmath>
+#include<iomanip>
+#include<algorithm>
+#include<string>
+#include<numeric>
+#define ll long long
+#define ld long double
+#define ed '\n'
+#define fast 
+using namespace std;
+int main()
+{
+	ll a, b, k;
+	cin >> a >> b >> k;
+	if (a % k == 0 && b % k == 0)
+	{
+		cout << "Both" << ed;
+	}
+	else if (a % k == 0 && b % k != 0)
+	{
+		cout << "Memo" << ed;
+	}
+	else if(a % k != 0 && b % k == 0)
+	{
+		cout << "Momo" << ed;
+	}
+	else
+	{
+		cout << "No One" << ed;
+	}
+	return 0;
+}
