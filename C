@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+#include<iomanip>
+#include<algorithm>
+#include<string>
+#include<numeric>
+#define ll long long
+#define ld long double
+#define ed '\n'
+#define fast 
+using namespace std;
+int main()
+{
+	char let;
+	cin >> let;
+	if (let=='z')
+	{
+		cout <<'a';
+	}
+	else
+	{
+
+	cout << char(let+1);
+	}
+	return 0;
+}
