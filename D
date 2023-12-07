@@ -1,0 +1,51 @@
+#include <iostream>
+#include <cmath>
+#include<iomanip>
+#include<algorithm>
+#include<string>
+#include<numeric>
+#define ll long long
+#define ld long double
+#define ed '\n'
+
+using namespace std;
+int main()
+{
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);    //fast
+	
+		long long a, b, c, d;
+		cin >> a >> b >> c >> d;
+		
+		 if (a + b - c == d)
+		{
+			cout << "YES";
+		}
+		else if (a + b * c == d)
+		{
+			cout << "YES";
+		}
+		else if (a - b + c == d)
+		{
+			cout << "YES";
+		}
+		else if (a - b * c == d)
+		{
+			cout << "YES";
+		}
+		else if (a * b - c == d)
+		{
+			cout << "YES";
+		}
+		else if (a * b + c == d)
+		{
+			cout << "YES";
+		}
+		else
+		{
+			cout << "NO";
+		}
+	
+	return 0;
+}
