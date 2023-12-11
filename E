@@ -1,0 +1,32 @@
+#include<iostream>
+#include<cmath>
+#include<iomanip>
+#include<algorithm>
+#include<string>
+#include<numeric>
+#include <cstdlib>
+#define ll long long
+#define ld long double
+#define ed '\n'
+#define fast 	ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);    //fast
+using namespace std;
+int main()
+{
+	fast;
+	int a, b;
+	cin >> a >> b;
+	int res = abs(a - b);
+	if (( res < 2) && a != 0 && b != 0)
+	{
+		cout << "YES";
+	}
+	else
+	{
+		cout << "NO";
+	}
+
+
+
+	return 0;
+
+}
